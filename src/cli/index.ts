@@ -1,11 +1,20 @@
 // change this to import
 import { Command } from "commander";
 const program = new Command();
+import "dotenv/config";
+
+const requiredEnvironmanetVars: string[] = ["API_KEY"];
+
+requiredEnvironmanetVars.forEach((item) => {
+  if (!process.env[item]) {
+    throw new Error(`Required environment variable missing: ${item}`);
+  }
+});
 
 program
-  .name("string-util")
-  .description("CLI to some JavaScript string utilities")
-  .version("0.8.0");
+  .name("hyperliquid-trader")
+  .description("CLI for trading on Hyperliquid")
+  .version("0.0.1");
 
 program
   .command("split")
