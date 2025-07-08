@@ -1,0 +1,31 @@
+{
+  "name": "hyperliquid-trader",
+  "version": "1.0.0",
+  "description": "CLI tool for trading crypto on Hyperliquid",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest --run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run -- --coverage",
+    "view:coverage": "google-chrome coverage/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rudijs/hyperliquid-trader.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rudijs/hyperliquid-trader/issues"
+  },
+  "homepage": "https://github.com/rudijs/hyperliquid-trader#readme",
+  "devDependencies": {
+    "@types/node": "^24.0.10",
+    "@vitest/coverage-v8": "^3.2.4",
+    "commander": "^14.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}
